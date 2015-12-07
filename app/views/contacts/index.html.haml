@@ -1,0 +1,7 @@
+= form_for '' do |f|
+  %li
+    = f.label :contact_name
+    = f.autocomplete_field :contact_name, autocomplete_contact_name_contacts_path, update_elements: { phone: '#_phone' }
+  %li
+    = f.label :phone
+    = f.text_field :phone
